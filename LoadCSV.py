@@ -15,6 +15,5 @@ def CSVFileWantToTranslate(inputCSVFile, outputCSVFile, columnNameThatWillTransl
         translatedText = translateText(sourceText, targetLanguage)
         row[translatedColumn] = translatedText
         print(row[translatedColumn])
-        break
 
     df.to_csv(outputCSVFile, index=False)

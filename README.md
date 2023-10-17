@@ -25,7 +25,7 @@ If you want to setup TranslateBigFile from source you will need
 
 You only need to run install the Python, once it installeed in the repository environment just run the following command to install needed libraries `pip install -r requirements.txt` after installing python. This will install all you want. You should **not** run `pip install -r requirements.txt` in each time.
 
-Each file has its own build instructions in its own directory.
+Each file has its own build instructions in its own function.
 
 ## How to use it?
 - You need to make file named `.env` this file will have in it some properties as following

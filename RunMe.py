@@ -4,7 +4,19 @@ import sys
 
 def main():
     try:
-        CSVFileWantToTranslate(inputCSVFile = 'Data.csv', outputCSVFile = 'TranslatedData.csv', columnNameThatWillTranslate = 'Main', targetLanguage = 'Arabic')
+        fromLanguage='en'
+        targetLanguages = [
+            'ar',
+            # 'fr',
+            # 'es',
+            ]  # Add more languages as needed
+        CSVFileWantToTranslate(
+            inputCSVFile = 'Data.csv',
+            outputCSVFile = 'TranslatedData.csv',
+            sourceColumn = 'en',
+            fromLanguage = fromLanguage,
+            targetLanguages = targetLanguages,
+            )
     except ValueError as e:
         return str(e)
 

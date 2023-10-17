@@ -1,3 +1,4 @@
 python-dotenv==1.0.0
 pandas
 openai
+requests
